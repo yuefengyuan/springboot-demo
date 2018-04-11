@@ -10,7 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * @author Alex
+ * @author Alex Ege
  */
 
 @RunWith(SpringRunner.class)

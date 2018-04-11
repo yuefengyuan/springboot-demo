@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
- * @author Alex
+ * @author Alex Ege
  */
 
 @Entity

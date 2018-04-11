@@ -4,7 +4,7 @@ import com.demo.domain.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
- * @author Alex
+ * @author Alex Ege
  */
 public interface UserRepository extends JpaRepository<User, Long> {
 
