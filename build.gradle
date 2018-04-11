@@ -13,6 +13,7 @@ buildscript {
 apply plugin: 'java'
 //apply plugin: 'eclipse'
 apply plugin: 'idea'
+//apply plugin: 'war'
 apply plugin: 'org.springframework.boot'
 
 jar {
@@ -27,11 +28,36 @@ repositories {
 }
 
 dependencies {
+
+    //common
+    compile("org.apache.commons:commons-lang3:3.6")
+
+    //boot
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
+
+    // jdbc
     compile("mysql:mysql-connector-java")
+
+    //thymeleaf
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("org.thymeleaf.extras:thymeleaf-extras-java8time")
+
+    //tools
     compileOnly("org.springframework.boot:spring-boot-devtools")
 
+    // ui
+    compile("org.webjars.bower:bootstrap:3.3.7")
+    compile("org.webjars.bower:jquery:3.2.1")
+    compile("org.webjars:vue:1.0.24")
+    compile("org.webjars.bower:vue-resource:0.7.0")
+
+    //test
+    testCompile("org.seleniumhq.selenium:selenium-java:3.4.0")
     testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile("junit:junit:4.12")
+}
+
+bootRun {
+    addResources = true
 }
