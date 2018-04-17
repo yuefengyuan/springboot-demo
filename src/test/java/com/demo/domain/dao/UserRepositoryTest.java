@@ -24,7 +24,7 @@ public class UserRepositoryTest {
 	public void testFindByUserName() throws Exception {
 		userRepository.save(new User("alex","123456","abc@163.com","kak"));
 
-		userRepository.delete(userRepository.findByUserName("alex"));
+		//userRepository.delete(userRepository.findByUserName("alex"));
 	}
 
 }

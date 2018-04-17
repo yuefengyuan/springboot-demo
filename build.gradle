@@ -36,7 +36,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
 
-    // jdbc
+    // jdbc mysql
     compile("mysql:mysql-connector-java")
 
     //thymeleaf
@@ -45,6 +45,9 @@ dependencies {
 
     //tools
     compileOnly("org.springframework.boot:spring-boot-devtools")
+
+    // redis
+    compile("org.springframework.boot:spring-boot-starter-data-redis")
 
     // ui
     compile("org.webjars.bower:bootstrap:3.3.7")
