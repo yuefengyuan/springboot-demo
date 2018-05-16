@@ -10,7 +10,7 @@ import java.util.Date;
 public class HelloSender {
 
     @Autowired
-	private AmqpTemplate rabbitTemplate;
+	private AmqpTemplate rabbitTemplate;//springboot default provide
 
     public void send() {
         String context = "hello " + new Date();

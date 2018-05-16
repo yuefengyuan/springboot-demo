@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
-@MapperScan("com.demo.domain.mapper")
+@MapperScan("com.demo.domain.dao")
 public class Application {
 
 	public static void main(String[] args) throws Exception {

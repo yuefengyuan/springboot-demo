@@ -1,4 +1,4 @@
-package com.demo.mq.rabbitmq;
+package com.demo.mq;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;
@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @author Alex Ege
+ *
+ * queue config
  */
 @Configuration
 public class RabbitConfig {
@@ -15,7 +17,7 @@ public class RabbitConfig {
 		return new Queue("hello");
 	}
 
-	@Bean
+/*	@Bean
 	public Queue neoQueue() {
 		return new Queue("neo");
 	}
@@ -23,6 +25,6 @@ public class RabbitConfig {
 	@Bean
 	public Queue objectQueue() {
 		return new Queue("object");
-	}
+	}*/
 
 }

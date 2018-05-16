@@ -1,5 +1,6 @@
-package com.demo.mq;
+package com.demo.mq.rabbitmq;
 
+import com.demo.mq.HelloSender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,4 @@ public class HelloTest {
 	public void hello() throws Exception {
 		helloSender.send();
 	}
-
-
 }

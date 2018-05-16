@@ -11,12 +11,15 @@ public class User {
 
     private String nickName;
 
-    public User(Long id, String userName, String email, String password, String nickName) {
+    private String passWord;
+
+    public User(Long id, String userName, String email, String password, String nickName, String passWord) {
         this.id = id;
         this.userName = userName;
         this.email = email;
         this.password = password;
         this.nickName = nickName;
+        this.passWord = passWord;
     }
 
     public User() {
@@ -61,5 +64,13 @@ public class User {
 
     public void setNickName(String nickName) {
         this.nickName = nickName == null ? null : nickName.trim();
+    }
+
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord == null ? null : passWord.trim();
     }
 }
